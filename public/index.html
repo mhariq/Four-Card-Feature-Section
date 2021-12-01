@@ -28,16 +28,16 @@
       Cyan: hsl(180, 62%, 55%),Orange: hsl(34, 97%, 64%),Blue: hsl(212, 86%, 64%),
       dark-blue: hsl(234, 12%, 34%),gray-blue: hsl(229, 6%, 66%),light-Gray: hsl(0, 0%, 98%),-->
 
-  <body class="bg-lg font-sans text-db h-screen">
+  <body class="h-screen font-sans bg-lg text-db">
     <div class="container text-center my-14">
-      <div class="w-auto lg:w-2/3 xl:w-2/5 container">
-        <h1 class="text-2xl lg:text-3xl my-2 font-extralight">
+      <div class="container w-auto lg:w-2/3 xl:w-2/5">
+        <h1 class="my-2 text-2xl lg:text-3xl font-extralight">
           Reliable, efficient delivery
         </h1>
-        <h1 class="text-2xl lg:text-3xl font-bold mb-5">
+        <h1 class="mb-5 text-2xl font-bold lg:text-3xl">
           Powered by Technology
         </h1>
-        <p class="text-xs sm:text-base lg:text-md font-light">
+        <p class="text-xs font-light sm:text-base lg:text-md">
           Our Artificial Intelligence powered tools use millions of project data
           points to ensure that your project is successful
         </p>
@@ -46,40 +46,42 @@
 
     <div
       class="
-        cards
-        grid grid-cols-1
-        md:grid-cols-3 md:grid-rows-4
-        gap-10
-        w-auto
-        xl:w-2/3
         container
+        grid
+        w-auto
+        grid-cols-1
+        gap-10
+        cards
+        md:grid-cols-3 md:grid-rows-4
+        xl:w-1/2
       "
     >
       <!-- CARD1 -->
 
       <div
         class="
-          card
           container
+          relative
           w-1/2
-          md:w-auto
           h-64
           p-3
-          shadow-xl
-          rounded-md
-          border-t-4 border-ured
-          text-left
           px-4
-          relative
+          text-left
+          border-t-4
+          rounded-md
+          shadow-xl
+          md:w-auto
+          card
+          border-ured
           md:col-start-2 md:row-start-1 md:row-end-3 md:justify-self-center
         "
       >
-        <h3 class="text-db sm:text-xl font-bold mt-5 mb-3">Team Builder</h3>
-        <p class="text-xs sm:text-sm font-thin leading-5">
+        <h3 class="mt-5 mb-3 font-bold text-db sm:text-xl">Team Builder</h3>
+        <p class="text-xs font-thin leading-5 sm:text-sm">
           Scans our talent network to create the optimal team for your project
         </p>
         <img
-          class="h-20 w-20 absolute bottom-4 right-8"
+          class="absolute w-20 h-20 bottom-4 right-8"
           src="../images/icon-team-builder.svg"
         />
       </div>
@@ -87,27 +89,28 @@
 
       <div
         class="
-          card
           container
+          relative
           w-1/2
-          md:w-auto
           h-64
           p-3
-          shadow-xl
-          rounded-md
-          border-t-4 border-ublue
-          text-left
           px-4
-          relative
+          text-left
+          border-t-4
+          rounded-md
+          shadow-xl
+          card
+          md:w-auto
+          border-ublue
           md:col-start-3 md:row-start-2 md:row-end-4 md:justify-self-start
         "
       >
-        <h3 class="text-db text-xl font-bold mt-5 mb-3">Calculator</h3>
+        <h3 class="mt-5 mb-3 text-xl font-bold text-db">Calculator</h3>
         <p class="text-sm font-thin leading-5">
           Uses data from past projects to provide better delivery estimates
         </p>
         <img
-          class="h-20 w-20 absolute bottom-4 right-8"
+          class="absolute w-20 h-20 bottom-4 right-8"
           src="../images/icon-calculator.svg"
         />
       </div>
@@ -115,27 +118,30 @@
 
       <div
         class="
-          card
           container
+          relative
+          <!--
           w-1/2
-          md:w-auto
+          -->
           h-64
           p-3
-          shadow-xl
-          rounded-md
-          border-t-4 border-uorange
-          text-left
           px-4
-          relative
+          text-left
+          border-t-4
+          rounded-md
+          shadow-xl
+          card
+          md:w-auto
+          border-uorange
           md:col-start-2 md:row-start-3 md:row-end-5 md:justify-self-center
         "
       >
-        <h3 class="text-db text-xl font-bold mt-5 mb-3">Karma</h3>
+        <h3 class="mt-5 mb-3 text-xl font-bold text-db">Karma</h3>
         <p class="text-sm font-thin leading-5">
           Regularly evaluates our talent to ensure quality
         </p>
         <img
-          class="h-20 w-20 absolute bottom-4 right-8"
+          class="absolute w-20 h-20 bottom-4 right-8"
           src="../images/icon-karma.svg"
         />
       </div>
@@ -143,34 +149,37 @@
 
       <div
         class="
-          card
           container
+          relative
+          <!--
           w-1/2
-          md:w-auto
+          -->
           h-64
           p-3
-          shadow-xl
-          rounded-md
-          border-t-4 border-ucyan
-          text-left
           px-4
-          relative
+          text-left
+          border-t-4
+          rounded-md
+          shadow-xl
+          card
+          md:w-auto
+          border-ucyan
           md:col-start-1 md:row-start-2 md:row-end-4 md:justify-self-end
         "
       >
-        <h3 class="text-db text-xl font-bold mt-5 mb-3">Supervisor</h3>
+        <h3 class="mt-5 mb-3 text-xl font-bold text-db">Supervisor</h3>
         <p class="text-sm font-thin leading-5">
           Monitors activity to identify project roadblocks
         </p>
         <img
-          class="h-20 w-20 absolute bottom-4 right-8"
+          class="absolute w-20 h-20 bottom-4 right-8"
           src="../images/icon-team-builder.svg"
         />
       </div>
     </div>
 
     <footer>
-      <p class="attribution container text-center mt-10">
+      <p class="container mt-10 text-center attribution">
         Challenge by
         <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
           >Frontend Mentor</a
